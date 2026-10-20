@@ -1,0 +1,46 @@
+server:
+  port: 8080
+  mode: debug
+  host: 0.0.0.0   # 监听所有网卡：Docker 端口映射必需；本地访问 localhost:8080 不受影响
+
+websocket:
+  read_buffer_size: 1024
+  write_buffer_size: 1024
+  handshake_timeout: 10s
+  ping_period: 54s
+  pong_wait: 60s
+  max_message_size: 512
+
+database:
+  driver: mysql
+  host: 
+  port: 3306
+  user: root
+  password: 
+  dbname: chat_db
+  charset: utf8mb4
+
+redis:
+  host: 
+  port: 6379
+  password: ""
+  db: 0
+
+jwt:
+  secret: your_secret
+  expire: 24h
+
+# SMTP邮件服务器配置（用于发送注册验证码，请按实际邮箱服务商填写）
+email:
+  host:    # SMTP服务器地址，如 smtp.qq.com / smtp.163.com
+  port: 465                # 465=SSL，587=STARTTLS
+  username:   ""           # 登录账号
+  password: ""             # 密码或授权码（QQ/163邮箱需使用授权码）
+  from: ""                 # 发件人邮箱地址
+  ssl: true                # 端口465填true，端口587填false
+
+# 文件上传配置（头像、消息附件等）
+upload:
+  dir: ./uploads          # 文件存储目录（相对项目根目录）
+  url_prefix: /uploads    # 静态访问URL前缀，与dir对应
+  max_size: 10485760      # 单文件大小上限（字节），10MB

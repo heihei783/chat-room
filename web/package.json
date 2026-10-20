@@ -1,0 +1,7 @@
+{
+  "name": "chat-app-web",
+  "version": "1.0.0",
+  "description": "聊天应用前端（原生 ES Modules，零依赖）",
+  "type": "module",
+  "private": true
+}

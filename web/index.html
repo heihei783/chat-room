@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chat-app 聊天应用</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/logo.svg">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/variables.css">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/auth.css">
+  <link rel="stylesheet" href="./styles/chat.css">
+</head>
+<body>
+  <!-- 应用根挂载点：页面视图由 router 渲染到 #app -->
+  <div id="app"></div>
+  <!-- 全局浮层挂载点：Toast/Modal 等轻提示组件渲染于此 -->
+  <div id="overlay"></div>
+
+  <!-- 应用入口：ES Module，浏览器原生支持，无需构建工具 -->
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

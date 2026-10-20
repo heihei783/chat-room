@@ -1,0 +1,10 @@
+# Docker 构建上下文排除项：减小镜像体积、避免敏感/无关文件进入镜像
+.git
+**/.git
+.sessions
+uploads
+test_api.sh
+chat-app.openapi.json
+Dockerfile
+docker-compose.yml
+*.log

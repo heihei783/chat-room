@@ -1,0 +1,41 @@
+/* CSS 变量：全局设计令牌，统一主题色/间距/圆角/阴影，修改一处即全局生效 */
+:root {
+  /* 主题色 */
+  --color-primary: #3b82f6;
+  --color-primary-hover: #2f6fdc;
+  --color-primary-light: rgba(59, 130, 246, 0.12);
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+
+  /* 文本 */
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --text-tertiary: #9ca3af;
+
+  /* 背景 */
+  --bg-body: #f3f5f9;
+  --bg-panel: #ffffff;
+  --bg-hover: #f5f7fa;
+  --bg-active: #eef3fc;
+
+  /* 边框 */
+  --border-color: #e5e7eb;
+
+  /* 尺寸 */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  /* 布局 */
+  --sidebar-width: 260px;
+  --member-width: 240px;
+  --header-height: 56px;
+
+  /* 阴影 */
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.12);
+
+  /* 过渡 */
+  --transition: 0.18s ease;
+}

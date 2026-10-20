@@ -1,0 +1,76 @@
+/* 认证页样式：登录/注册/忘记密码共用布局 */
+
+.auth-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e8eefc 0%, #f3f5f9 60%);
+  padding: 24px;
+}
+
+.auth-card {
+  width: 380px;
+  padding: 36px 32px;
+  background: var(--bg-panel);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.auth-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.auth-brand img {
+  width: 40px;
+  height: 40px;
+}
+
+.auth-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.auth-subtitle {
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-tertiary);
+  margin: 6px 0 24px;
+}
+
+/* 验证码行：输入框 + 发送按钮 */
+.code-row {
+  display: flex;
+  gap: 8px;
+}
+
+.code-row .form-input {
+  flex: 1;
+}
+
+.code-btn {
+  width: 110px;
+  flex-shrink: 0;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.auth-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  font-size: 13px;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: var(--text-tertiary);
+}

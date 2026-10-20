@@ -1,0 +1,20 @@
+# 部署编排：应用容器（MySQL/Redis 为外部服务，见 config.yaml 的 database/redis 配置）
+# 使用：docker compose up -d --build
+
+services:
+  chat-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: chat-app
+    ports:
+      - "8080:8080"            # 宿主机端口:容器端口；修改端口时同步调整 nginx/安全组
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      # 上传文件持久化：容器重建/升级不丢失头像与图片消息
+      - upload_data:/app/uploads
+    restart: unless-stopped
+
+volumes:
+  upload_data:
